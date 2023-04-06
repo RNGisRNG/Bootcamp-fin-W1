@@ -1,1 +1,0 @@
-<?= "Welcome to this pool", PHP_EOL; ?>
