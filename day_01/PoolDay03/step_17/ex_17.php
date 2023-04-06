@@ -1,10 +1,12 @@
 <?php
 
 function array_key($arr){
-    foreach($arr as $key=>$value){
-        if($key === "key")
-            return $value;
+    $value = null;
+    foreach($arr as $keys=>$values){
+        if($keys === "key")
+            $value =  $values;
     }
+    return $value;
 }
 
 ?>
