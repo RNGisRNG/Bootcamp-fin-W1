@@ -6,12 +6,11 @@ function print_until($max){
     if($max < 0){
         echo "Boulet !\n";
         return false;
-    }else{
-        while($i <= $max){
-            echo $i++."\n";
-        }
-        return true;
     }
+    while($i <= $max){
+        echo $i++."\n";
+    }
+    return true;
 }
 
 ?>
