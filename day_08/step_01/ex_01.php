@@ -1,7 +1,7 @@
 <?php
 
 class MyDisplay {
-    function display(){
+    public function display(){
         echo "Hello World !\n";
     }
 }

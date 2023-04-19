@@ -4,28 +4,28 @@ class MyAttributes {
     private $a;
     private $b;
 
-    function __construct($val1, $val2){
+    public function __construct($val1, $val2){
         $this->a = $val1;
         $this->b = $val2;
     }
 
-    function getA(){
+    public function getA(){
         return $this->a;
     }
 
-    function setA($set){
+    public function setA($set){
         $this->a = $set;
     }
 
-    function getB(){
+    public function getB(){
         return $this->b;
     }
 
-    function setB($set){
+    public function setB($set){
         $this->b = $set;
     }
 
-    function display(){
+    public function display(){
         echo $this->getA()." ".$this->getB()."\n";
     }
 }

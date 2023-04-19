@@ -5,55 +5,55 @@ class MyTinyCalculator {
     private $b;
     private $result;
 
-    function __construct($a, $b){
+    public function __construct($a, $b){
         $this->a = $a;
         $this->b = $b;
     }
 
-    function getA(){
+    public function getA(){
         return $this->a;
     }
 
-    function getB(){
+    public function getB(){
         return $this->b;
     }
 
-    function getResult(){
+    public function getResult(){
         return $this->result;
     }
 
-    function setA($set){
+    public function setA($set){
         $this->a = $set;
     }
 
-    function setB($set){
+    public function setB($set){
         $this->b = $set;
     }
 
-    function setResult($set){
+    public function setResult($set){
         $this->result = $set;
     }
 
-    function showResult(){
+    public function showResult(){
         echo $this->result."\n";
     }
 
-    function add(){
+    public function add(){
         $this->result =  $this->a + $this->b;
         return $this->result;
     }
 
-    function subtract(){
+    public function subtract(){
         $this->result = $this->a - $this->b;
         return $this->result;
     }
 
-    function multiply(){
+    public function multiply(){
         $this->result = $this->a * $this->b;
         return $this->result;
     }
 
-    function divide(){
+    public function divide(){
         $this->result = $this->a / $this->b;
         return $this->result;
     }

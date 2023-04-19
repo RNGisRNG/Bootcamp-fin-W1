@@ -8,7 +8,7 @@ class Character {
     protected $mana;
     const CLASSE = "Character";
 
-    function __construct($name){
+    public function __construct($name){
         $this->name = $name;
         $this->endurance = 50;
         $this->agility = 2;
@@ -16,27 +16,27 @@ class Character {
         $this->mana = 2;
     }
 
-    function getName(){
+    public function getName(){
         return $this->name;
     }
 
-    function getEndurance(){
+    public function getEndurance(){
         return $this->endurance;
     }
 
-    function getAgility(){
+    public function getAgility(){
         return $this->agility;
     }
 
-    function getStrength(){
+    public function getStrength(){
         return $this->strength;
     }
 
-    function getMana(){
+    public function getMana(){
         return $this->mana;
     }
 
-    function getClass(){
+    public function getClass(){
         return $this::CLASSE;
     }
 }

@@ -4,11 +4,11 @@ class MyAttribute {
 
     public $attr;
 
-    function __construct($attribute){
+    public function __construct($attribute){
         $this->attr = $attribute;
     }
 
-    function display(){
+    public function display(){
         echo $this->attr."\n";
     }
 }

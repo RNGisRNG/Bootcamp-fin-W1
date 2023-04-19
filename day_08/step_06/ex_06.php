@@ -8,31 +8,31 @@ class Character {
     protected $mana = 2;
     const CLASSE = "Character";
 
-    function __construct($name){
+    public function __construct($name){
         $this->name = $name;
     }
 
-    function getName(){
+    public function getName(){
         return $this->name;
     }
 
-    function getEndurance(){
+    public function getEndurance(){
         return $this->endurance;
     }
 
-    function getAgility(){
+    public function getAgility(){
         return $this->agility;
     }
 
-    function getStrength(){
+    public function getStrength(){
         return $this->strength;
     }
 
-    function getMana(){
+    public function getMana(){
         return $this->mana;
     }
 
-    function getClass(){
+    public function getClass(){
         return $this::CLASSE;
     }
 }
@@ -45,21 +45,21 @@ class Mage extends Character {
     protected $agility = 10;
     protected $mana = 10;
 
-    function __construct($name)
+    public function __construct($name)
     {
         parent::__construct($name);
         $this->creation();
     }
 
-    function __destruct(){
+    public function __destruct(){
         echo $this->getName().": By the four gods, I passed away...\n";
     }
 
-    function attack(){
+    public function attack(){
         echo $this->getName()." :Feel the power of my magic !\n";
     }
 
-    function creation(){
+    public function creation(){
         echo $this->getClass().": May the gods be with me.\n";
     }
 }
@@ -72,21 +72,21 @@ class Paladin extends Character {
     protected $agility = 8;
     protected $mana = 3;
 
-    function __construct($name)
+    public function __construct($name)
     {
         parent::__construct($name);
         $this->creation();
     }
 
-    function __destruct(){
+    public function __destruct(){
         echo $this->getName().": Aarrg I can’t believe I’m dead...\n";
     }
 
-    function attack(){
+    public function attack(){
         echo $this->getName().": I'll crush you with my hammer !\n";
     }
 
-    function creation(){
+    public function creation(){
         echo $this->getClass().": I'll engrave my name in the history !\n";
     }
 }
