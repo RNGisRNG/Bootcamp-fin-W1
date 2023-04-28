@@ -1,7 +1,3 @@
-window.addEventListener(("load"), ()=>{
-    display_recu(5, "_");
-});
-
 function display_recu(nbrLoop, symbol){
     let str = "";
     let space = "";
